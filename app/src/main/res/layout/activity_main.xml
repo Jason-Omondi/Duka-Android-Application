@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnOil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Oil"
+        app:layout_constraintEnd_toStartOf="@+id/btnUnga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDuka"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnUnga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Unga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnOil"
+        app:layout_constraintTop_toBottomOf="@+id/txtDuka"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/txtDuka"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:text="DUKA 15% DISCOUNT"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtQty1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Quantity"
+        app:layout_constraintEnd_toEndOf="@+id/btnOil"
+        app:layout_constraintStart_toStartOf="@+id/btnOil"
+        app:layout_constraintTop_toBottomOf="@+id/btnOil" />
+
+    <TextView
+        android:id="@+id/txtQty2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Quantity"
+        app:layout_constraintEnd_toEndOf="@+id/btnUnga"
+        app:layout_constraintStart_toStartOf="@+id/btnUnga"
+        app:layout_constraintTop_toBottomOf="@+id/btnUnga" />
+
+    <Button
+        android:id="@+id/btnKahawa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Kahawa"
+        app:layout_constraintEnd_toEndOf="@+id/btnOil"
+        app:layout_constraintStart_toStartOf="@+id/btnOil"
+        app:layout_constraintTop_toBottomOf="@+id/txtQty1"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnSoap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Soap"
+        app:layout_constraintEnd_toEndOf="@+id/btnUnga"
+        app:layout_constraintStart_toStartOf="@+id/btnUnga"
+        app:layout_constraintTop_toBottomOf="@+id/txtQty2"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/txtQty3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Quantity"
+        app:layout_constraintEnd_toEndOf="@+id/btnKahawa"
+        app:layout_constraintStart_toStartOf="@+id/btnKahawa"
+        app:layout_constraintTop_toBottomOf="@+id/btnKahawa" />
+
+    <TextView
+        android:id="@+id/txtQty4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Quantity"
+        app:layout_constraintEnd_toEndOf="@+id/btnSoap"
+        app:layout_constraintStart_toStartOf="@+id/btnSoap"
+        app:layout_constraintTop_toBottomOf="@+id/btnSoap" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="CLEAR"
+        app:icon="@android:drawable/ic_lock_power_off"
+        app:layout_constraintEnd_toEndOf="@+id/btnKahawa"
+        app:layout_constraintStart_toStartOf="@+id/btnKahawa"
+        app:layout_constraintTop_toBottomOf="@+id/txtQty3"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/btnTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="TOTAL"
+        android:textColorHighlight="@android:color/holo_green_light"
+        android:textColorLink="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="@+id/btnSoap"
+        app:layout_constraintStart_toStartOf="@+id/btnSoap"
+        app:layout_constraintTop_toBottomOf="@+id/txtQty4"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Total"
+        app:layout_constraintEnd_toEndOf="@+id/btnClear"
+        app:layout_constraintStart_toStartOf="@+id/btnClear"
+        app:layout_constraintTop_toBottomOf="@+id/btnClear" />
+
+    <TextView
+        android:id="@+id/txtItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Items"
+        app:layout_constraintEnd_toEndOf="@+id/btnTotal"
+        app:layout_constraintStart_toStartOf="@+id/btnTotal"
+        app:layout_constraintTop_toBottomOf="@+id/btnTotal" />
+</androidx.constraintlayout.widget.ConstraintLayout>
